@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="A small social space built around privacy, choice, and real conversations.">
+  <title>Commonplace | Your feed</title>
+  <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/main.js" defer></script>
+</head>
+<body data-page="feed" data-root=".">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html" aria-label="Commonplace home">
+        <img src="assets/img/mark.svg" alt="" width="34" height="34">
+        <span>commonplace<span class="brand-period">.</span></span>
+      </a>
+      <nav class="nav-list" aria-label="Main navigation">
+        <a class="nav-link active" href="index.html"><span class="nav-icon">⌂</span> Home</a>
+        <a class="nav-link" href="pages/profile.html"><span class="nav-icon">◉</span> My profile</a>
+        <a class="nav-link" href="pages/privacy.html"><span class="nav-icon">♧</span> Privacy room</a>
+        <a class="nav-link" href="pages/about.html"><span class="nav-icon">↗</span> About us</a>
+      </nav>
+      <div class="sidebar-note">
+        <span class="tiny-lock">⌑</span>
+        <p><strong>Young, scrappy, and hungry.</strong><br>Learning by doing.</p>
+      </div>
+      <div class="sidebar-bottom">
+        <a class="profile-mini" href="pages/profile.html">
+          <span class="avatar avatar-small" data-avatar>H</span>
+          <span><strong data-display-name>Hannah Aque</strong><small data-handle>@hannah</small></span>
+        </a>
+        <button class="text-button" type="button" data-logout>Log out</button>
+      </div>
+    </aside>
+
+    <main class="main-column">
+      <header class="mobile-header">
+        <a class="brand" href="index.html"><img src="assets/img/mark.svg" alt="" width="30" height="30"><span>commonplace<span class="brand-period">.</span></span></a>
+        <a class="icon-button" href="pages/privacy.html" aria-label="Privacy settings">♧</a>
+      </header>
+      <section class="page-heading">
+        <div>
+          <p class="eyebrow">WEDNESDAY, OCTOBER 14</p>
+          <h1>Your little corner<br class="mobile-break"> of the internet.</h1>
+          <p class="subheading">A project made for learning.</p>
+        </div>
+        <span class="status-pill"><span class="status-dot"></span> Tracking-free demo</span>
+      </section>
+
+      <section class="composer panel" aria-labelledby="composer-title">
+        <div class="composer-top">
+          <span class="avatar" data-avatar>H</span>
+          <label class="sr-only" for="post-content" id="composer-title">Write a post</label>
+          <textarea id="post-content" rows="3" maxlength="500" placeholder="What's on your mind? No need to make it perfect." data-post-input></textarea>
+        </div>
+        <div class="composer-bottom">
+          <span class="privacy-caption"><span aria-hidden="true">♧</span> Shared with this demo community</span>
+          <div class="composer-actions">
+            <span class="char-count" data-char-count>0 / 500</span>
+            <button class="button button-primary" type="button" data-publish>Share post <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+        <p class="form-message" data-composer-message aria-live="polite"></p>
+      </section>
+
+      <div class="feed-toolbar">
+        <div><h2>Community notes</h2><p>Recent posts, shown in time order.</p></div>
+        <label class="select-wrap"><span class="sr-only">Filter feed</span>
+          <select data-feed-filter><option value="all">Everyone</option><option value="mine">My posts</option></select>
+        </label>
+      </div>
+      <section class="feed-list" data-feed-list aria-label="Community posts"></section>
+      <p class="feed-footnote">Just a heads up: your posts live rent-free in this browser. If you clear your cache, they vanish into the digital void.</p>
+    </main>
+
+    <aside class="right-rail">
+      <section class="rail-card welcome-card">
+        <span class="illustration-spark">✿</span>
+        <p class="eyebrow">THE PROJECT</p>
+        <h2>Learning by<br>doing.</h2>
+        <p>There's a million things I haven't done, but just you wait.</p>
+        <a class="arrow-link" href="pages/about.html">Read the about page <span>↗</span></a>
+      </section>
+      <section class="rail-card">
+        <div class="rail-title"><h3>Privacy, in plain words</h3><span>⌑</span></div>
+        <ul class="privacy-points">
+          <li><span class="check">✓</span><span><strong>No third-party trackers</strong><small>No analytics scripts or ad pixels are included.</small></span></li>
+          <li><span class="check">✓</span><span><strong>Your browser, your data</strong><small>Demo posts stay in local storage.</small></span></li>
+          <li><span class="check">✓</span><span><strong>No AI ranking</strong><small>Posts are displayed in chronological order.</small></span></li>
+        </ul>
+        <a class="arrow-link" href="pages/privacy.html">Review privacy settings <span>↗</span></a>
+      </section>
+      <div class="rail-footer">Project by<br><strong>Hannah Dennisse Aque</strong><br><span>HTML · CSS · JavaScript</span></div>
+    </aside>
+  </div>
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>

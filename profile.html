@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <title>My profile | Commonplace</title>
+  <link rel="icon" href="../assets/img/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../src/css/style.css">
+  <script src="../src/js/main.js" defer></script>
+</head>
+<body data-page="profile" data-root="..">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="../index.html"><img src="../assets/img/mark.svg" alt="" width="34" height="34"><span>commonplace<span class="brand-period">.</span></span></a>
+      <nav class="nav-list" aria-label="Main navigation">
+        <a class="nav-link" href="../index.html"><span class="nav-icon">⌂</span> Home</a>
+        <a class="nav-link active" href="profile.html"><span class="nav-icon">◉</span> My profile</a>
+        <a class="nav-link" href="privacy.html"><span class="nav-icon">♧</span> Privacy room</a>
+        <a class="nav-link" href="about.html"><span class="nav-icon">↗</span> About us</a>
+      </nav>
+      <div class="sidebar-note"><span class="tiny-lock">⌑</span><p><strong>Young, scrappy, and hungry.</strong><br>Your profile is only a local demo.</p></div>
+      <div class="sidebar-bottom"><a class="profile-mini" href="profile.html"><span class="avatar avatar-small" data-avatar>H</span><span><strong data-display-name>Hannah Aque</strong><small data-handle>@hannah</small></span></a><button class="text-button" type="button" data-logout>Log out</button></div>
+    </aside>
+    <main class="main-column">
+      <header class="mobile-header"><a class="brand" href="../index.html"><img src="../assets/img/mark.svg" alt="" width="30" height="30"><span>commonplace<span class="brand-period">.</span></span></a><a class="icon-button" href="privacy.html" aria-label="Privacy settings">♧</a></header>
+      <div class="page-topline"><a class="back-link" href="../index.html">← Back to feed</a><span class="status-pill"><span class="status-dot"></span> Local profile</span></div>
+      <section class="profile-cover"><span class="cover-orbit orbit-one"></span><span class="cover-orbit orbit-two"></span><span class="cover-label">A LITTLE SPACE TO BE</span></section>
+      <section class="profile-card panel">
+        <div class="profile-main">
+          <span class="avatar avatar-xl" data-avatar>H</span>
+          <div class="profile-identity"><h1 data-display-name>Hannah Aque</h1><p data-handle>@hannah</p><span class="member-tag">✿ community member</span></div>
+          <button class="button button-secondary" type="button" data-edit-profile>Edit profile</button>
+        </div>
+        <p class="profile-bio" data-bio>Learning, unlearning, and leaving room for better questions.</p>
+        <div class="profile-stats"><div><strong data-post-count>0</strong><span>posts</span></div><div><strong>Local</strong><span>profile storage</span></div><div><strong>0</strong><span>ad interests</span></div></div>
+        <form class="edit-profile-form hidden" data-profile-form>
+          <label for="edit-display-name">Display name</label><input id="edit-display-name" name="displayName" maxlength="40" required>
+          <label for="edit-bio">A little about you</label><textarea id="edit-bio" name="bio" rows="3" maxlength="160" placeholder="A line or two, if you feel like it."></textarea>
+          <div class="form-row"><button class="button button-primary" type="submit">Save changes</button><button class="button button-quiet" type="button" data-cancel-edit>Cancel</button></div>
+          <p class="form-message" data-profile-message aria-live="polite"></p>
+        </form>
+      </section>
+      <div class="feed-toolbar"><div><h2>Your notes</h2><p>Things you've chosen to put into words.</p></div><a class="button button-primary button-small" href="../index.html#post-content">Write a post ↗</a></div>
+      <section class="feed-list" data-profile-posts aria-label="Your posts"></section>
+    </main>
+    <aside class="right-rail">
+      <section class="rail-card"><p class="eyebrow">HOW THIS WORKS</p><h2>Saved locally, cleared easily.</h2><p>You can change your display name or bio whenever you want. Everything is stored locally on this browser.</p><a class="arrow-link" href="privacy.html">Your privacy controls <span>↗</span></a></section>
+      <div class="rail-footer">Project by<br><strong>Hannah Dennisse Aque</strong><br><span>HTML · CSS · JavaScript</span></div>
+    </aside>
+  </div>
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>

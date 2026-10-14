@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <title>Privacy room | Commonplace</title>
+  <link rel="icon" href="../assets/img/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../src/css/style.css">
+  <script src="../src/js/main.js" defer></script>
+</head>
+<body data-page="privacy" data-root="..">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="../index.html"><img src="../assets/img/mark.svg" alt="" width="34" height="34"><span>commonplace<span class="brand-period">.</span></span></a>
+      <nav class="nav-list" aria-label="Main navigation"><a class="nav-link" href="../index.html"><span class="nav-icon">⌂</span> Home</a><a class="nav-link" href="profile.html"><span class="nav-icon">◉</span> My profile</a><a class="nav-link active" href="privacy.html"><span class="nav-icon">♧</span> Privacy room</a><a class="nav-link" href="about.html"><span class="nav-icon">↗</span> About us</a></nav>
+      <div class="sidebar-note"><span class="tiny-lock">⌑</span><p><strong>Saved locally.</strong><br>Cleared easily.</p></div>
+      <div class="sidebar-bottom"><a class="profile-mini" href="profile.html"><span class="avatar avatar-small" data-avatar>H</span><span><strong data-display-name>Hannah Aque</strong><small data-handle>@hannah</small></span></a><button class="text-button" type="button" data-logout>Log out</button></div>
+    </aside>
+    <main class="main-column privacy-main">
+      <header class="mobile-header"><a class="brand" href="../index.html"><img src="../assets/img/mark.svg" alt="" width="30" height="30"><span>commonplace<span class="brand-period">.</span></span></a><a class="icon-button" href="privacy.html" aria-label="Privacy settings">♧</a></header>
+      <p class="eyebrow">LOCAL STORAGE ONLY</p><h1 class="privacy-title">How it works<span>.</span></h1>
+      <p class="subheading privacy-lead">Here is how data works in this web project.</p>
+      <section class="privacy-status panel"><div class="privacy-status-icon">⌑</div><div><span class="status-pill"><span class="status-dot"></span> No external tracking scripts</span><h2>Your browser is the storage room.</h2><p>Posts and your demo profile are saved in local storage on this device. Nothing is sent to a Commonplace server because this project does not have one.</p></div></section>
+      <h2 class="privacy-section-title">Your controls</h2>
+      <section class="settings-list panel">
+        <div class="setting-row"><div class="setting-icon">◷</div><div class="setting-copy"><h3>Chronological feed</h3><p>Posts appear newest first. There is no engagement ranking or recommendation model to switch off.</p></div><span class="setting-state">Always on</span></div>
+        <div class="setting-row"><div class="setting-icon">⊘</div><div class="setting-copy"><h3>Third-party trackers</h3><p>This codebase does not load analytics scripts, ad pixels, external fonts, or third-party APIs.</p></div><span class="setting-state">Not included</span></div>
+        <div class="setting-row"><div class="setting-icon">▤</div><div class="setting-copy"><h3>Clear demo data</h3><p>Remove posts, profile details, and the saved demo session from this browser.</p></div><button class="button button-danger" type="button" data-clear-data>Clear local data</button></div>
+      </section>
+      <section class="honesty-card"><span class="honesty-mark">i</span><div><h2>A little honesty matters.</h2><p>This is a practice project, not a secure production service. Local storage is readable by scripts running on the same origin and is not encrypted. Do not enter real passwords or sensitive information. A real privacy-first platform would also need security review, secure authentication, clear data policies, and careful hosting.</p></div></section>
+      <p class="privacy-bottom"><a href="about.html">Read the idea behind Commonplace ↗</a></p>
+    </main>
+    <aside class="right-rail"><section class="rail-card"><p class="eyebrow">THE SHORT VERSION</p><h2>Local storage only.</h2><p>This project relies entirely on the browser.</p></section><div class="rail-footer">Project by<br><strong>Hannah Dennisse Aque</strong><br><span>HTML · CSS · JavaScript</span></div></aside>
+  </div>
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>
